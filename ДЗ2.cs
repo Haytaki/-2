@@ -82,7 +82,6 @@ namespace ConsoleApp1
          // Дз ко 2 уроку
         // Написать метод, возвращающий минимальное из трех чисел.
             
-        {
              Console.WriteLine("Введи число");
              int a = int.Parse(Console.ReadLine());
              Console.WriteLine("Введи число");
@@ -96,7 +95,7 @@ namespace ConsoleApp1
                  Console.WriteLine("Наименьшее число " + b);
              else
                  Console.WriteLine("Наименьшее число " + c);
-
+            
              Console.ReadLine();
 
              //Написать метод подсчета количества цифр числа.
