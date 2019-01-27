@@ -4,13 +4,87 @@ namespace ConsoleApp1
 {
     class Program
     {
-        // Болотова Анна
-        // Написать метод, возвращающий минимальное из трех чисел.
+       /*
+        Болотова Анна
 
+        Написать программу «Анкета». 
+        Последовательно задаются вопросы (имя, фамилия, возраст, рост, вес). 
+        В результате вся информация выводится в одну строчку.
+            а) используя склеивание;
+            б) используя форматированный вывод;
+            в) *используя вывод со знаком $.
+        */
         static void Main(string[] args)
         {
+            Console.WriteLine("Привет, как тебя зовут??");
+            string name = Console.ReadLine();
+            Console.WriteLine("Как твоя фамилия?");
+            string surname = Console.ReadLine();
+            Console.WriteLine("Сколько тебе лет?");
+            string age = Console.ReadLine();
+            Console.WriteLine("Укажи свой рост в сантиметрах.");
+            string growth = Console.ReadLine();
+            Console.WriteLine("Укажи свой вес в килограммах");
+            string weight = Console.ReadLine();
+            Console.WriteLine("Проверьте данные " + "$");
+            Console.WriteLine("Пользователь: " + name + " " + surname + ".");
+            Console.WriteLine("Возраст: " + age);
+            Console.WriteLine("Рост: " + growth);
+            Console.WriteLine("Вес: " + weight);
 
-            /* Console.WriteLine("Введи число");
+            /*
+             Ввести вес и рост человека. 
+             Рассчитать и вывести индекс массы тела (ИМТ) по формуле I=m/(h*h);
+             где m — масса тела в килограммах, h — рост в метрах
+            */
+            Console.WriteLine();
+            Console.WriteLine("Твой идекс массы тела");
+            double h = Int32.Parse(growth);
+            double m = Int32.Parse(weight);
+            double kg = h / 100;
+            double imt = m/(kg*kg);
+            Console.WriteLine("{0:f1}", imt);
+
+            /*
+             Написать программу, которая подсчитывает расстояние 
+             между точками с координатами x1, y1 и x2,y2 по формуле 
+             r=Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2). 
+             Вывести результат, используя спецификатор формата .2f (с двумя знаками после запятой);
+             */
+
+            Console.WriteLine("Введи число");
+            string ax1 = Console.ReadLine();
+            Console.WriteLine("Введи число");
+            string ay1 = Console.ReadLine();
+            Console.WriteLine("Введи число");
+            string ax2 = Console.ReadLine();
+            Console.WriteLine("Введи число");
+            string ay2 = Console.ReadLine();
+            Console.WriteLine();
+            double x1 = Int32.Parse(ax1);
+            double x2 = Int32.Parse(ax2);
+            double y1 = Int32.Parse(ay1);
+            double y2 = Int32.Parse(ay2);
+            double r = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+            Console.WriteLine("r = " + "{0:f2}", r);
+
+            /*
+            Написать программу обмена значениями двух переменных с использованием третьей переменной.
+            */
+            
+            int a = 12;
+            int b = 4;
+            int c = a;
+            int a = b;
+            int c = b;
+
+            
+         // Дз ко 2 уроку
+        // Написать метод, возвращающий минимальное из трех чисел.
+            
+        {
+
+             Console.WriteLine("Введи число");
              int a = int.Parse(Console.ReadLine());
              Console.WriteLine("Введи число");
              int b = int.Parse(Console.ReadLine());
@@ -188,8 +262,6 @@ namespace ConsoleApp1
             // Не понимаю как пeревести bmi в число
 
             Console.ReadLine();
-
- */
         }
     }
 }
